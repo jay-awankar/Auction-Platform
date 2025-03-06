@@ -11,7 +11,7 @@ const AuctionItem = () => {
   useEffect(() => {
     const fetchItem = async () => {
       try {
-        const res = await axios.get(`http://localhost:3001/auctions/${id}`);
+        const res = await axios.get(`https://auctionair.netlify.app/auctions/${id}`);
         setItem(res.data);
       } catch (error) {
         setMessage(
@@ -34,7 +34,7 @@ const AuctionItem = () => {
     }
 
     try {
-      const res = await axios.post(`http://localhost:3001/bid/${id}`, {
+      const res = await axios.post(`https://auctionair.netlify.app/bid/${id}`, {
         bid,
         username,
       });

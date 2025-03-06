@@ -19,7 +19,7 @@ const Signup = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:3001/signup", {
+      const res = await axios.post("https://auctionair.netlify.app/signup", {
         username,
         password,
       });

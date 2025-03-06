@@ -15,7 +15,7 @@ const Dashboard = () => {
 
     const fetchItems = async () => {
       try {
-        const res = await axios.get("http://localhost:3001/auctions");
+        const res = await axios.get("https://auctionair.netlify.app/auctions");
         setItems(res.data);
       } catch (error) {
         console.error("Error fetching auctions:", error);

@@ -7,6 +7,7 @@ const { verify } = pkg
 // const jwt = require('jsonwebtoken');
 import dotenv from 'dotenv'
 dotenv.config()
+const PORT = process.env.PORT || 3001
 
 import { userSignIn, userSignUp } from './routes/User.routes.js';
 import { deleteAuctionItemById, getAllAuctionItems, postAuctionItem } from './routes/Auction.routes.js';
@@ -22,8 +23,8 @@ const SECRET_KEY = 'my_super_secret_123!';
 connect(process.env.MONGO_URI);
 
 // Start the server
-app.listen(3001, () => {
-    console.log('Server is running on port 3001');
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
   });
 
 // Middleware to verify token

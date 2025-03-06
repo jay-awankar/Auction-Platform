@@ -27,7 +27,7 @@ const PostAuction = () => {
 
     try {
       await axios.post(
-        "http://localhost:3001/auction",
+        "https://auctionair.netlify.app/auction",
         { itemName, description, startingBid, closingTime },
         { headers: { Authorization: `Bearer ${token}` } } // Send token in headers
       );

@@ -13,7 +13,7 @@ const Signin = () => {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:3001/signin", {
+      const res = await axios.post("https://auctionair.netlify.app/signin", {
         username,
         password,
       });
