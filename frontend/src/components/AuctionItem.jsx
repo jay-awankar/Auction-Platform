@@ -11,7 +11,7 @@ const AuctionItem = () => {
   useEffect(() => {
     const fetchItem = async () => {
       try {
-        const res = await axios.get(`http://localhost:5001/auctions/${id}`);
+        const res = await axios.get(`http://localhost:3001/auctions/${id}`);
         setItem(res.data);
       } catch (error) {
         setMessage(
@@ -34,7 +34,7 @@ const AuctionItem = () => {
     }
 
     try {
-      const res = await axios.post(`http://localhost:5001/bid/${id}`, {
+      const res = await axios.post(`http://localhost:3001/bid/${id}`, {
         bid,
         username,
       });

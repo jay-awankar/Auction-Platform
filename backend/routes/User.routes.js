@@ -1,4 +1,7 @@
 import User from "../schema/User.schema.js";
+import pkg from 'jsonwebtoken';
+const { sign } = pkg
+const SECRET_KEY = 'my_super_secret_123!';
 
 export const userSignUp = async (req, res) => {
     try {

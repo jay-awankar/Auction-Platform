@@ -19,7 +19,7 @@ const Signup = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:5001/signup", {
+      const res = await axios.post("http://localhost:3001/signup", {
         username,
         password,
       });
@@ -36,7 +36,7 @@ const Signup = () => {
 
   return (
     <div className="form-container">
-      <h2>Signup</h2>
+      <h2>Sign-Up Here</h2>
       {error && <p className="error">{error}</p>}
       <form onSubmit={handleSignup}>
         <input
@@ -44,14 +44,14 @@ const Signup = () => {
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          required
+          
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          required
+          
         />
         <button type="submit">Signup</button>
       </form>

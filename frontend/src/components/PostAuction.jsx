@@ -27,7 +27,7 @@ const PostAuction = () => {
 
     try {
       await axios.post(
-        "http://localhost:5001/auction",
+        "http://localhost:3001/auction",
         { itemName, description, startingBid, closingTime },
         { headers: { Authorization: `Bearer ${token}` } } // Send token in headers
       );

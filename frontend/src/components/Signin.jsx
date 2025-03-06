@@ -13,7 +13,7 @@ const Signin = () => {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:5001/signin", {
+      const res = await axios.post("http://localhost:3001/signin", {
         username,
         password,
       });
@@ -35,7 +35,7 @@ const Signin = () => {
 
   return (
     <div className="form-container">
-      <h2>Signin</h2>
+      <h2>Sign-In</h2>
       {error && <p className="error">{error}</p>}
       <form onSubmit={handleSignin}>
         <input

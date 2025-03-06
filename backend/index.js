@@ -3,7 +3,7 @@ import { connect } from 'mongoose';
 import cors from 'cors';
 // const bcrypt = require('bcryptjs');
 import pkg from 'jsonwebtoken';
-const { verify, sign } = pkg
+const { verify } = pkg
 // const jwt = require('jsonwebtoken');
 import dotenv from 'dotenv'
 dotenv.config()

@@ -30,13 +30,14 @@ const App = () => {
     <BrowserRouter>
       <div className="app">
         <header>
-          <h1>Auction App</h1>
+          <h1>AUCTIONAIR</h1>
+          <hr style={{maxWidth:"120px"}}></hr>
           <nav>
             <Link to="/signup" className="nav-link">
-              Signup
+              Sign-Up
             </Link>
             <Link to="/signin" className="nav-link">
-              Signin
+              Sign-In
             </Link>
             <Link to="/dashboard" className="nav-link">
               Dashboard

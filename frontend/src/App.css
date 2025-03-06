@@ -25,7 +25,7 @@ body {
 }
 
 header {
-  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  background: linear-gradient(180deg, #02085b 0%, #192ecfd5 100%);
   color: #fff;
   padding: 15px 0;
   text-align: center;
@@ -74,7 +74,7 @@ textarea:focus {
 
 button {
   padding: 12px;
-  background: #6a11cb;
+  background: #3b1dc0;
   color: white;
   border: none;
   border-radius: 5px;
@@ -105,7 +105,7 @@ footer {
 }
 
 button:hover {
-  background: #2575fc;
+  background: #011f54;
 }
 
 ul {
@@ -132,7 +132,7 @@ li a {
   font-weight: bold;
 }
 
-.message {
+.message, .error {
   color: #d9534f; /* Bootstrap danger color */
   font-weight: bold;
   margin-top: 10px;
