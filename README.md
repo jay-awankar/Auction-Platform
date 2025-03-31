@@ -1,8 +1,8 @@
-#AICTE Internship Project
+# AICTE Internship Project
 
-##This is a fully functional web app
+## This is a fully functional web app
 
-###Technology:
+### Technology:
 React | Vite | Mongodb | Express | Nodejs | Bootstrap
 
 Hosted on Netlify - [https://auctionair.netlify.app/]
